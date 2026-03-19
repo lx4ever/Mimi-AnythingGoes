@@ -38,6 +38,7 @@ summary: 1-2 sentence summary
 - Keep markdown simple and readable
 - Every note must include a section: `## Bubble 的洞察` with 3-5 high-value insights (can be practical, reflective, strategic, or philosophical)
 - After each push, send the user a concise insights summary in chat (not just file/commit status)
+- Prefer cross-note linkage insights on every push: highlight similarities/differences with prior notes (e.g., same core idea across different aspects/dimensions)
 
 ## Explorations
 
