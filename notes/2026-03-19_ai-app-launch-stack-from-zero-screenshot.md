@@ -31,6 +31,16 @@ source: Telegram topic 954 (Mimi and Bubble Supergroup); OCR from user-provided 
 - “完全免费”通常受配额、地区、功能限制、流量上限影响，需逐项核验。
 - 部分工具组合的适配性（鉴权、数据库、后端稳定性、部署限制）需要实测。
 
+## 你的当前实操链路（补充）
+
+你现在实际使用的流程是：
+1. Google AI Studio
+2. Autigravity
+3. Push 到 GitHub
+4. 通过 Vercel 发布
+
+这说明你已经从“看流程图”走到“稳定跑通个人流水线”。
+
 ## Bubble 的洞察
 
 - 这条和你刚建立的 `ai-toolchain-watchlist.md` 完美联动：先有路线图，再做成熟度与稳定性审查，能防止被“看起来很顺”的流程误导。
