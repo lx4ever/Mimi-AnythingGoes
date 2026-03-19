@@ -1,12 +1,12 @@
 ---
 date: 2026-03-19
 created: "15:51"
-summary: 记录观影意向：想看《Killers of the Flower Moon》（非虚构改编）。该选择体现你对真实历史、权力结构与正义议题的持续兴趣。
+summary: 记录对《Killers of the Flower Moon》的兴趣：包含电影与非虚构原著书。该选择体现你对真实历史、权力结构与正义议题的持续兴趣。
 ---
 
-# 想看电影：《Killers of the Flower Moon》（Non-Fiction）
+# 《Killers of the Flower Moon》：电影 + 非虚构原著
 
-观影意向：想看 **Killers of the Flower Moon**（非虚构/真实事件改编）。
+兴趣记录：这部作品我想看电影，也想读原著（非虚构/真实事件题材）。
 
 ---
 source: Telegram topic 954 (Mimi and Bubble Supergroup)
