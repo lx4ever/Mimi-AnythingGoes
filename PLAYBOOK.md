@@ -41,6 +41,15 @@ Not limited to action items.
 - If possible, connect current note to prior notes from another dimension/aspect.
 - Keep insights concise but sharp.
 
+## Merge Safety Rule
+
+Only merge notes when topic overlap is specific and high-confidence.
+Required before merge:
+1. Same core question/problem statement
+2. Compatible context (not just similar keywords)
+3. No key factual contradiction
+If uncertain, do NOT merge; keep separate and add cross-links.
+
 ## Output language
 
 Default to Chinese unless user explicitly asks otherwise.

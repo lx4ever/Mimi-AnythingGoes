@@ -35,6 +35,7 @@ summary: 1-2 sentence summary
 
 - Preserve original wording and language
 - One topic per file (unless clearly same topic)
+- Merge notes only when same-topic confidence is high and specific evidence is explicit; otherwise keep separate and cross-link instead.
 - For links: include URL + short relevance note
 - For images: extract meaningful text/content to markdown
 - Keep markdown simple and readable
