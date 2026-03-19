@@ -12,7 +12,7 @@ summary: 提取 Google Cloud Tech 关于 Agent Skill 设计的 5 种核心模式
 ## 核心观点（Important Points）
 
 1. **格式标准化已不是主要难题，内容设计才是关键。**  
-   现在多种 Agent 工具都采用相似的  结构，真正拉开差距的是“技能内部逻辑如何设计”。
+   现在多种 Agent 工具都采用相似的 `SKILL.md` 结构，真正拉开差距的是“技能内部逻辑如何设计”。
 
 2. **Pattern 1 — Tool Wrapper（工具封装）**  
    把特定库/框架规范封装为按需加载技能。优点是：只在需要时加载上下文，降低噪声与 token 浪费。
@@ -43,9 +43,9 @@ summary: 提取 Google Cloud Tech 关于 Agent Skill 设计的 5 种核心模式
 
 ## 可执行落地（Next Actions）
 
-1. 给你的 repo 新增 （定义优先级与判分标准）
+1. 给你的 repo 新增 `references/review-checklist.md`（定义优先级与判分标准）
 2. 在 capture 流程前加 1 步 Inversion 问答（当输入模糊时触发）
-3. 把常用写作/归档模板放到 ，让输出稳定可控
+3. 把常用写作/归档模板放到 `assets/`，让输出稳定可控
 
 ---
 authors mentioned: @Saboo_Shubham_, @lavinigam
