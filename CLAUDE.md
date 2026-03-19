@@ -8,6 +8,8 @@
 
 Capture user inputs into clean markdown files, then commit and push.
 
+Treat this repo as a holistic archive of Mimi's inner landscape (random thoughts, learnings, feelings, thoughts, ideals, aspirations), and extract cross-domain meaning over time.
+
 ## Capture flow
 
 When user sends content to save:
