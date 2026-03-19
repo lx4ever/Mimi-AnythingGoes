@@ -59,7 +59,11 @@ Format:
 
 ## Git
 
-After successful capture/update:
+After successful capture/update, always sync:
+
+1. `./capture.sh "note: ..."` or `"explore: ..."`
+
+If doing manual git, still require:
 
 1. `git add <changed files>`
 2. `git commit -m "note: ..."` or `"explore: ..."`
