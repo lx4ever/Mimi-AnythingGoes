@@ -57,6 +57,20 @@ Content...
 - `note: <brief summary>`
 - `explore: <brief summary>`
 
+## Token-efficient save modes
+
+- Batched commit (no push): `./capture.sh --batch "note: ..."`
+- Immediate push: `./capture.sh "note: ..."`
+- Flush batched commits: `./capture-flush.sh`
+
+Chat flags:
+- `#save lite` (default short ack)
+- `#save full`
+- `#save bilingual`
+- `#save analysis`
+- `#save batch`
+- `#save flush`
+
 ## Why this setup
 
 - **Token-friendly**: plain markdown over heavy page JSON

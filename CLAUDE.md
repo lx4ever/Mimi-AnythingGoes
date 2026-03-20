@@ -39,11 +39,43 @@ summary: 1-2 sentence summary
 - For links: include URL + short relevance note
 - For images: extract meaningful text/content to markdown
 - Keep markdown simple and readable
-- Every note must include a section: `## Bubble 的洞察` with 3-5 high-value insights (can be practical, reflective, strategic, or philosophical)
-- After each push, send the user a concise insights summary in chat (not just file/commit status)
-- Prefer cross-note linkage insights on every push: highlight similarities/differences with prior notes (e.g., same core idea across different aspects/dimensions)
 - Follow `PLAYBOOK.md` for response style and insight priorities
 - Prefer `templates/note.md` and `templates/exploration.md` when creating new files
+
+## Token-Efficiency Defaults (Active)
+
+### 2) Language policy (monolingual by default)
+- Default: keep source language only (no CN/EN duplication).
+- Only output bilingual when user explicitly asks (`+bilingual`).
+
+### 3) Same-topic update policy
+- If same-day + same-topic, update existing note instead of creating a new duplicate.
+- Prefer append/section update over full rewrite.
+
+### 4) Chat ack policy (short by default)
+- Default user-facing ack format:
+  - `Saved: <file> | commit: <sha> | pushed ✅`
+- Only include Pattern/Blind spot/New idea when user asks (`+analysis` or `#save full`).
+
+### 5) Git sync policy (batch by default)
+- Default mode: `batch` (stage + local commit accumulation, deferred push).
+- Flush triggers:
+  - user sends `#save flush`, or
+  - batch reaches 5 note updates, or
+  - 30 minutes elapsed since last push.
+
+### 7) Memory log policy (one-liner)
+- Execution log entries must be one line:
+  - `<time> | <file> | <commit> | pushed|batched`
+- Avoid repeated narrative boilerplate in daily memory logs.
+
+### 8) User command flags
+- `#save lite` → minimal structure + short ack
+- `#save full` → full structure + insights summary
+- `#save bilingual` → bilingual output
+- `#save analysis` → include Pattern/Blind spot/New idea
+- `#save batch` → keep batched sync mode
+- `#save flush` → immediate push of pending batched changes
 
 ## Explorations
 
@@ -67,12 +99,16 @@ Format:
 
 ## Git
 
-After successful capture/update, always sync:
+Default mode is batched sync.
 
-1. `./capture.sh "note: ..."` or `"explore: ..."`
+- Normal save:
+  1. `./capture.sh --batch "note: ..."` (or `"explore: ..."`)
+- Immediate push when needed:
+  1. `./capture.sh "note: ..."` (or `"explore: ..."`)
+- Flush pending batched changes:
+  1. `./capture-flush.sh`
 
-If doing manual git, still require:
-
+If doing manual git in batch mode:
 1. `git add <changed files>`
 2. `git commit -m "note: ..."` or `"explore: ..."`
-3. `git push`
+3. Push only on flush trigger (`#save flush` / threshold / timer).

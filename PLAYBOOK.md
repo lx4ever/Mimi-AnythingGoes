@@ -19,10 +19,14 @@ Treat wide跨度 content as signal, not noise.
 
 ## Non-negotiables on each push
 
-After every successful push, chat response must include:
-1. **Pattern I see** (cross-note or cross-time signal)
-2. **Blind spot / unseen angle**
-3. **New idea seed** (1-3 ideas)
+Mode-aware response contract:
+
+- **Default (`#save lite`)**: short ack only
+  - `Saved: <file> | commit: <sha> | pushed ✅`
+- **Analysis mode (`#save analysis` or `#save full`)**: include all three:
+  1. **Pattern I see** (cross-note or cross-time signal)
+  2. **Blind spot / unseen angle**
+  3. **New idea seed** (1-3 ideas)
 
 ## Insight style
 
