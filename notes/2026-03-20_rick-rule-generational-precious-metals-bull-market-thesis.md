@@ -1,12 +1,14 @@
 ---
 date: 2026-03-20
 created: "12:04"
-summary: Mimi提取Rick Rule访谈要点：贵金属/大宗商品可能处于代际牛市早期，驱动来自供给侧长期约束与资本错配；投资上需用周期判断与仓位纪律应对高波动。
+summary: YouTube内容提取（非Mimi个人观点）：Rick Rule访谈提出贵金属/大宗商品可能处于代际牛市早期，驱动来自供给侧长期约束与资本错配；投资上需用周期判断与仓位纪律应对高波动。
 ---
 
 # Rick Rule：代际贵金属牛市可能刚刚开始
 
 ## 内容
+
+> 说明：以下为 YouTube 视频内容提取与整理，不代表 Mimi 本人立场或投资观点。
 
 标题 / Title Youtube
 Rick Rule: A Generational Precious Metals Bull Market Is JUST STARTING
