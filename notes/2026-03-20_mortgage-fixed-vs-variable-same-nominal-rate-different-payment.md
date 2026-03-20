@@ -1,50 +1,35 @@
 ---
 date: 2026-03-20
 created: "12:33"
-summary: 提取房贷比较要点：同名义利率下，固定与浮动因复利频率不同会产生不同实际年利率（EAR）与月供，比较时应先统一到EAR。
+summary: 细化提取加拿大房贷固定/浮动月供差异：关键不仅是名义利率，更在计息口径与“payment based on greater of ...”条款，可能导致浮动利率更低但月供更高。
 ---
 
-# 同样3.6%，固定和浮动月供为何不同？
+# 🇨🇦房贷固定和浮动为什么月供算法不一样啊
 
 ## 内容
 
-标题 / Title
-今天到R银行办贷款，发现同样5年浮动利率3.6和5年固定利率3.6，每月还款额不同，浮动更高
+### 关键要点
+- 发帖人困惑：浮动利率数字更低，但月供反而更高。
+- 图2与图3差异不只在利率数字，还在计息与月供规则。
+- 固定（图2注释）：fixed rate compounded semi-annually, not in advance（半年复利）。
+- 浮动（图3注释）：prime±margin，calculated daily using a simple interest formula（日计息、简单利息口径）。
+- 图3第7条脚注关键：月供按“当前3年固定利率 vs Renewal Rate 二者取高”计算。
+- 这会导致“名义浮动利率更低，但月供更高”。
+- 例子：固定5.0%约$1245.41 vs 浮动4.7%约$1447.74；另一个房子固定4.5%约2900 vs 浮动4.4%约3500。
+- 结论：名义利率低 ≠ 当期月供低；多交部分通常对应更快摊还本金（也可能叠加条款约束）。
 
-关键要点 / Key Points
+### 方法步骤（如有）
+1. 先确认是否有“payment based on greater of …”条款。
+2. 分开核对计息方式与月供重设规则。
+3. 让银行提供payment breakdown（本金/利息拆分）再比较。
+4. 不要只按headline rate做判断。
 
-• 同样写“3.6%”，固定和浮动的复利频率不同，所以真实年利率不同。
-Even with the same “3.6%” quote, fixed vs variable uses different compounding frequencies, so effective annual rates differ.
-• 固定利率（常见半年复利）示例：实际年利率约 3.6324%。
-Fixed-rate (semi-annual compounding) example: effective annual rate is about 3.6324%.
-• 浮动利率（常见按月复利）示例：实际年利率约 3.661%。
-Variable-rate (monthly compounding) example: effective annual rate is about 3.661%.
-• 因此在同贷款额/同摊销期下，浮动3.6%的月供会略高于固定3.6%。
-Therefore, for the same principal and amortization, variable 3.6% can produce a slightly higher monthly payment than fixed 3.6%.
-• 文中还提示：比较贷款要问清“复利频率”和“实际年利率（EAR）”，不要只看名义利率。
-The post stresses comparing compounding frequency and EAR, not nominal rate alone.
+### 关键金句
+- “利率低不代表月供一定低。”
+- “固定和浮动不是同一套月供算法。”
 
-方法步骤（如有） / Steps (if any)
-
-1. 问银行：该报价是按月复利还是半年复利。
-Ask whether the quoted rate compounds monthly or semi-annually.
-2. 换算实际年利率再比较。
-Convert to effective annual rate before comparing.
-3. 再看月供与风险（如浮动利率触发利率风险）。
-Then compare payment impact and risk profile (e.g., variable-rate trigger risk).
-
-关键金句 / Key Quotes
-
-• “同样3.6%，月供可以不同，关键在复利频率。”
-• “不要只比数字，要比实际年利率。”
-
-标签 / Tags
-#房贷 #利率 #固定利率 #浮动利率 #复利 #加拿大房贷
+### 标签
+#房贷 #利率
 
 ## Bubble 的洞察
-
-- 这条信息最有价值的是把“利率比较”从表面数字转成统一口径比较（EAR）。
-- 你提取了一个常见认知误区：名义利率相同并不代表还款成本相同。
-- 该框架可直接复用到所有贷款产品比较：先统一计息口径，再谈月供和风险承受。
-- 真实决策不只看月供高低，还要看利率路径不确定性与现金流缓冲能力。
-- 若继续深化，可补“同一本金+摊销期”的对照计算模板，避免销售口径干扰判断。
+- 这个案例的决策关键是“条款结构”，不是单看利率数字本身。
