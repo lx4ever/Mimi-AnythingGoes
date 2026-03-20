@@ -21,8 +21,9 @@ Treat wide跨度 content as signal, not noise.
 
 Mode-aware response contract:
 
-- **Default (`#save lite`)**: short ack only
-  - `Saved: <file> | commit: <sha> | pushed ✅`
+- **Default (`#save lite`)**: short ack + one short Bubble insight
+  - `Saved <file>|<sha>|pushed`
+  - `Insight: <one sentence>`
 - **Analysis mode (`#save analysis` or `#save full`)**: include all three:
   1. **Pattern I see** (cross-note or cross-time signal)
   2. **Blind spot / unseen angle**

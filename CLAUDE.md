@@ -54,8 +54,10 @@ summary: 1-2 sentence summary
 
 ### 4) Chat ack policy (short by default)
 - Default user-facing ack format:
-  - `Saved: <file> | commit: <sha> | pushed ✅`
-- Only include Pattern/Blind spot/New idea when user asks (`+analysis` or `#save full`).
+  - `Saved <file>|<sha>|pushed`
+- Every commit must include one short Bubble insight line.
+  - Format: `Insight: <one sentence>`
+- Only include full Pattern/Blind spot/New idea when user asks (`+analysis` or `#save full`).
 
 ### 5) Git sync policy (batch by default)
 - Default mode: `batch` (stage + local commit accumulation, deferred push).
