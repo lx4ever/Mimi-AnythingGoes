@@ -63,6 +63,15 @@ summary: 这条笔记系统整理了 Claude Code 的 10 个隐藏命令与上手
   - 架构讨论留档
   - 作为后续上下文输入给其他 Agent（如 Codex 协同排障）
 
+/batch (v2.1.63+, bundled skill)
+∙	定义：将大规模变更分解为5-30个独立单元，每个单元在隔离的git worktree中由独立agent并行执行，完成后自动创建PR。
+∙	好处：批量迁移神器。每个agent独立隔离，不影响其他，且每个PR自动跑/simplify。
+∙	场景：框架迁移，全局rename、批量加type annotation、lodash替换为原生方法等模式化重复变更   
+
+/frontend-design ⚠️ (official plugin/skill, 非内置命令)
+∙	定义：Anthropic官方发布的skill，引导Claude在写代码前先确定大胆的美学方向（brutalist、maximalist、retro-futuristic等），避免”AI slop”千篇一律的Inter字体+紫色渐变。 需要手动安装。
+∙	好处：解决AI生成UI同质化问题。强制Claude思考typography pairing、color system、motion design，输出production-grade前端。
+
 10. 快捷键（作者常用）
 - Ctrl+V：可直接粘贴截图，不用先存文件再拖入。
 - Ctrl+J（Mac 可 Option+Enter）：直接换行。
