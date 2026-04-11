@@ -11,31 +11,33 @@ https://www.reddit.com/r/automation/comments/1sgmd5t/automated_the_entire_client
 
 ## 内容
 
-**背景**：3人小营销公司，服务好但完全不会获客。策略只是发 Instagram 帖子等人联系——没人联系。没预算投广告，也没钱雇 SDR。
+so a buddy of mine runs a small marketing agency. 3 employees. decent service. the problem was classic - they were amazing at the work but terrible at getting new clients. their whole strategy was posting on instagram and hoping someone would reach out. spoiler: nobody reached out
 
-**系统6步：**
+he asked me to help him set up some kind of system to get leads coming in. everyone was telling him to run ads or hire an SDR. he didnt have budget for either
 
-1. **自动建名单**：每周从潜在客户数据库自动拉取符合 ICP 的公司，按行业/规模/地区过滤，重点筛选意图信号（近期招聘帖、融资轮）。名单自动刷新，永不断供。
+what i built was honestly not that complicated but the results were kind of stupid
 
-2. **邮件基础设施自动管理**：独立发件域名，每域名5个收件箱，每箱每天最多发30封，自动预热。任何收件箱健康度下降自动暂停，全程不需人工介入。
+**the system:**
 
-3. **AI辅助个性化**：每条线索自动生成首句话，基于公司数据提取真实相关观察，不是模板，是真正有针对性的内容。批量在活动启动前生成。
+**step 1 - automated list building.** set up a workflow that pulls companies matching his ICP from a lead database every week. filtered by industry, company size, location, and most importantly intent signals like recent job postings and funding rounds. the list refreshes automatically so he never runs out of prospects
 
-4. **自动发送+跟进**：邮件按计划发出，根据对方是否开信/点击/回复自动触发后续。序列控制在2-3封，再多就是骚扰。
+**step 2 - automated email infrastructure management.** separate sending domains, 5 inboxes per domain, 30 emails max per inbox per day, automated warmup. all monitored automatically. if any inbox drops below health thresholds it gets flagged and paused before it can damage deliverability. he doesnt touch any of this
 
-5. **回复路由+分类**：有人回复时 AI 立即分类。正向回复直接推送到手机，负向记录归档，不在办公室自动改期。只看值得看的对话。
+**step 3 - AI-assisted email personalization.** each lead gets a first line pulled from their company data. not generic template stuff. actual relevant observations about their business. AI generates these in batch before campaign launch
 
-6. **日历预约**：感兴趣的潜在客户被引导到预约页，通话直接落到日历，附带全部上下文。
+**step 4 - automated sending and follow up.** emails go out on a schedule. follow ups trigger automatically based on whether someone opened, clicked, or replied. sequences are short - 2-3 emails max. anything more than that and you're just annoying people
 
-**结果**：
-- 0 outbound pipeline → 每月平均 15-20 通预约电话
-- 前2个月成交4个新客户
-- 工具总成本约 $200-300/月
-- 搭建含测试约2周
+**step 5 - reply routing and categorization.** when someone replies, AI categorizes it instantly. positive replies get flagged and routed to his phone. negative ones get logged. out of office gets rescheduled. he only sees the conversations that matter
 
-**核心观点**：
-> "The value was connecting them into one system that runs without him thinking about it."
-> 杠杆不来自工具的复杂度，来自编排（orchestration）。
+**step 6 - calendar booking.** interested prospects get sent to a booking page. calls land directly on his calendar with all the context attached
+
+the result: he went from literally 0 outbound pipeline to averaging 15-20 booked calls per month. closed 4 new clients in the first 2 months. total cost to run the system is maybe $200-300/month in tools
+
+the whole build took maybe 2 weeks including testing. the individual pieces arent revolutionary. the value was connecting them into one system that runs without him thinking about it
+
+the funniest part is he told me this is the most valuable thing anyone has ever built for his business. and its literally just automated emails lol. no AI agents. no chatbots. no fancy demo. just emails going to the right people at the right time with the right message
+
+> **Top comment (@Low-Honeydew6483):** This is a good example of leverage coming from orchestration not complexity. Most people chase better tools when the real win is connecting simple pieces into a system.
 
 ## Bubble 的洞察
 
